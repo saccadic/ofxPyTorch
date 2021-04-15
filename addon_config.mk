@@ -76,14 +76,16 @@ vs:
 	ADDON_DATA += torch_cpu.dll
 	ADDON_DATA += torch_cuda.dll
 
+	ADDON_LIBS += -INCLUDE:?warp_size@cuda@at@@YAHXZ
+
 	# Manual addition lib files.
-	C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\x64\nvToolsExt64_1.lib
-	C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cudart_static.lib
-	-INCLUDE:?warp_size@cuda@at@@YAHXZ
-	C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cufft.lib
-	C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\curand.lib
-	C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cublas.lib
-	C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cudnn.lib
+	# C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\x64\nvToolsExt64_1.lib
+	# C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cudart_static.lib
+	# -INCLUDE:?warp_size@cuda@at@@YAHXZ
+	# C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cufft.lib
+	# C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\curand.lib
+	# C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cublas.lib
+	# C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\cudnn.lib
 
 	# Manual addition headers
 	# C:\Program Files\NVIDIA Corporation\NvToolsExt\include
